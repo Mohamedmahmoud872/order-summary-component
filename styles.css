@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+--pale-blue: hsl(225, 100%, 94%);
+--bright-blue: hsl(245, 75%, 52%);
+--very-pale-blue: hsl(225, 100%, 98%);
+--desaturated-blue: hsl(224, 23%, 55%);
+--dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-color: var(--pale-blue);
+    background-size: cover;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.card {
+    width: 450px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 50px auto;
+    color: var(--desaturated-blue);
+}
+
+.img {
+    width: 100%;
+}
+
+.container {
+    font-size: 18px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.container > *{
+    margin: 13px 0;
+}
+
+.title {
+    font-weight: 900;
+    color: var(--dark-blue);
+    font-size: 32px;
+}
+
+.description {
+    line-height: 25px;
+}
+
+.plan-details {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--very-pale-blue);
+    border-radius: 20px;
+    font-size: 16px;
+    padding: 25px;
+    align-items: center;
+}
+
+.plan-details a {
+    color: var(--bright-blue);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.plan-details a:hover {
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.plan {
+    color: var(--dark-blue);
+}
+
+.price {
+    margin-right: 75px;
+    line-height: 25px;
+}
+
+.plan-type {
+    color: var(--dark-blue);
+}
+
+button {
+    padding: 1rem 0;
+    width: 100%;
+    font-weight: 700;
+    border-radius: 12px;
+    border: none;
+    font-size: 0,9rem;
+    cursor: pointer;
+}
+
+.proceed-btn {
+    color: white;
+    background-color: var(--bright-blue);
+    box-shadow: 0 20px 30px -8px rgb(197 189 245);
+}
+
+.proceed-btn:hover {
+    opacity: 0.8;
+}
+
+.cancel-btn {
+    color: var(--desaturated-blue);
+    background-color: white;
+    margin-top: 12px;
+}
+
+.cancel-btn:hover{
+    color: black;
+}
